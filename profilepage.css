@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+  border: 1px solid #bfbcbc;
+  border-radius: 10px;
+  scrollbar-width: none;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.top-bar {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.profile-header {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border: 3px solid #f35151;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.stats span {
+  text-align: center;
+}
+
+.bio {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 3px;
+  font-size: 12px;
+  background: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.highlights {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px;
+  scrollbar-width: none;
+}
+
+.highlights::-webkit-scrollbar {
+  display: none;
+}
+
+.highlight {
+  flex: 0 0 auto;
+  text-align: center;
+  font-size: 10px;
+  color: black;
+  width: 60px;
+}
+
+.highlight img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  padding-bottom: 80px;
+}
+
+.posts img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.end {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 351px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  z-index: 1000;
+}
+
+.end img {
+  height: 20px;
+  width: 20px;
+}
+
+.end .endprofile {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+}
