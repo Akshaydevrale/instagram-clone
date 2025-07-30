@@ -71,7 +71,7 @@ let postIndex = 0; // To keep track of which post is being displayed next
 const postContainer = document.getElementById("postContainer");
 const feed = document.querySelector(".feed");
 
-// ✅ Pause all playing videos
+// Pause all playing videos
 function pauseAllVideos() {
   const videos = document.querySelectorAll("video");
   videos.forEach(video => {
